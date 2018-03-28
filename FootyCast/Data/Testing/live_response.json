@@ -1,0 +1,113 @@
+ [
+  {
+  "title": "Watch LIVE: AFLW - GWS v ADEL",
+  "matchId": null,
+  "homeTeam": null,
+  "awayTeam": null,
+  "videoStream": {
+  "customAttributes": [
+                       {
+                       "attrName": "Event Type",
+                       "attrValue": "Adhoc Event",
+                       "mediaId": "5e4f50f418f31610VgnVCM200000af19030a____",
+                       "attributeId": "6e4f50f418f31610VgnVCM200000af19030a____",
+                       "attrKey": null,
+                       "guid": null
+                       },
+                       {
+                       "attrName": "ooyala embed code",
+                       "attrValue": "JodTFyZDE6y2U5NAf7xXz88-EEEhqdLA",
+                       "mediaId": "5e4f50f418f31610VgnVCM200000af19030a____",
+                       "attributeId": "7e4f50f418f31610VgnVCM200000af19030a____",
+                       "attrKey": null,
+                       "guid": null
+                       },
+                       {
+                       "attrName": "AFL Live Video",
+                       "attrValue": "Watch LIVE: AFLW - GWS v ADEL",
+                       "mediaId": "5e4f50f418f31610VgnVCM200000af19030a____",
+                       "attributeId": "8e4f50f418f31610VgnVCM200000af19030a____",
+                       "attrKey": null,
+                       "guid": null
+                       }
+                       ],
+  "title": "Watch LIVE: AFLW - GWS v ADEL",
+  "streamId": "AFLLive3",
+  "entitlement": null,
+  "thumbnailURL": "http://s.afl.com.au/staticfile/AFL Tenant/AFL/Files/Images/AFLW_live-stream-540x360.jpg",
+  "sizeRestricted": false
+  },
+  "auxiliaryVideoStreams": null,
+  "audioStreams": null
+  },
+  {
+  "title": "AFL.TV",
+  "matchId": null,
+  "homeTeam": null,
+  "awayTeam": null,
+  "videoStream": {
+  "customAttributes": [
+                       {
+                       "attrName": "ooyala embed code",
+                       "attrValue": "1yNGE5dDoyTdUKykqSeTysvmgup-rvS1",
+                       "mediaId": "dddac8a07191b310VgnVCM200000986bb70a____",
+                       "attributeId": "0138b78ee6f6c310VgnVCM200000986bb70a____",
+                       "attrKey": null,
+                       "guid": null
+                       },
+                       {
+                       "attrName": "AFL Live Video",
+                       "attrValue": "AFL Live Video",
+                       "mediaId": "dddac8a07191b310VgnVCM200000986bb70a____",
+                       "attributeId": "eddac8a07191b310VgnVCM200000986bb70a____",
+                       "attrKey": null,
+                       "guid": null
+                       }
+                       ],
+  "title": "AFL.TV",
+  "streamId": "footyTV",
+  "entitlement": "BPS_MOB_AFL_VOD",
+  "thumbnailURL": "http://s.afl.com.au/staticfile/AFL Tenant/AFL/Files/Images/AFL-TV.JPG",
+  "sizeRestricted": false
+  },
+  "auxiliaryVideoStreams": null,
+  "audioStreams": null
+  },
+  {
+  "title": "West Coast Eagles Vs Port Adelaide",
+  "matchId": "CD_M20181010104",
+  "homeTeam": {
+  "teamId": "CD_T150",
+  "teamAbbr": "WCE",
+  "teamName": "West Coast Eagles",
+  "teamNickname": "Eagles"
+  },
+  "awayTeam": {
+  "teamId": "CD_T110",
+  "teamAbbr": "PORT",
+  "teamName": "Port Adelaide",
+  "teamNickname": "Power"
+  },
+  "videoStream": {
+  "customAttributes": [
+                       {
+                       "attrName": "ooyala embed code",
+                       "attrValue": "M1cjk5dDpcY-kXbtStePBsIOElhbKSua",
+                       "mediaId": "c9b189bda449b510VgnVCM100000ac05030a____",
+                       "attributeId": "f9b189bda449b510VgnVCM100000ac05030a____",
+                       "attrKey": null,
+                       "guid": null
+                       }
+                       ],
+  "title": "West Coast Eagles Vs Port Adelaide",
+  "streamId": "387998",
+  "entitlement": "BPS_MOB_AFL_FOOTY_TV2",
+  "thumbnailURL": null,
+  "sizeRestricted": true
+  },
+  "auxiliaryVideoStreams": [
+  
+  ],
+  "audioStreams": null
+  }
+  ]

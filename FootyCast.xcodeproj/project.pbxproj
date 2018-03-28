@@ -1,0 +1,824 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		200B551F205A557500B0504D /* ReplayRoundVideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200B551E205A557500B0504D /* ReplayRoundVideosViewController.swift */; };
+		200B5521205A574D00B0504D /* AFLRoundCategoriesWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200B5520205A574D00B0504D /* AFLRoundCategoriesWrapper.swift */; };
+		200B5523205A5AFD00B0504D /* AFLRoundCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200B5522205A5AFD00B0504D /* AFLRoundCategory.swift */; };
+		200B5525205A7A2B00B0504D /* VideoPlayerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200B5524205A7A2B00B0504D /* VideoPlayerCoordinator.swift */; };
+		201119B120611595000C4CA0 /* InstagramActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201119B020611595000C4CA0 /* InstagramActivityIndicator.swift */; };
+		201119B3206115C3000C4CA0 /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201119B2206115C3000C4CA0 /* SpinnerViewController.swift */; };
+		2023D2592065CA2600E8ACC5 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2023D2582065CA2600E8ACC5 /* Authentication.swift */; };
+		2032DD292054D79C0047DF1E /* Bigpond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2032DD282054D79B0047DF1E /* Bigpond.swift */; };
+		2032DD2B2054E0FF0047DF1E /* bigpond_auth.json in Resources */ = {isa = PBXBuildFile; fileRef = 2032DD2A2054E0FF0047DF1E /* bigpond_auth.json */; };
+		2032DD2F2055EB810047DF1E /* media_token.json in Resources */ = {isa = PBXBuildFile; fileRef = 2032DD2E2055EB810047DF1E /* media_token.json */; };
+		2032DD312055EBE80047DF1E /* session.json in Resources */ = {isa = PBXBuildFile; fileRef = 2032DD302055EBE70047DF1E /* session.json */; };
+		2032DD332055F16B0047DF1E /* Ooyala.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2032DD322055F16B0047DF1E /* Ooyala.swift */; };
+		2032DD35205604530047DF1E /* Defaults+FootyCast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2032DD34205604530047DF1E /* Defaults+FootyCast.swift */; };
+		2032DD3720562DCE0047DF1E /* embed_token.json in Resources */ = {isa = PBXBuildFile; fileRef = 2032DD3620562DCE0047DF1E /* embed_token.json */; };
+		2032DD39205634450047DF1E /* secure_token.json in Resources */ = {isa = PBXBuildFile; fileRef = 2032DD38205634450047DF1E /* secure_token.json */; };
+		203EE8962059039600381435 /* seasons.json in Resources */ = {isa = PBXBuildFile; fileRef = 203EE8952059039500381435 /* seasons.json */; };
+		203EE89A20591A2700381435 /* AFLMediaToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203EE89920591A2700381435 /* AFLMediaToken.swift */; };
+		203EE89C20591BA400381435 /* AFLLiveVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203EE89B20591BA400381435 /* AFLLiveVideo.swift */; };
+		203EE89E20591BC400381435 /* AFLTeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203EE89D20591BC400381435 /* AFLTeam.swift */; };
+		203EE8A020591BD900381435 /* AFLVideoStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203EE89F20591BD900381435 /* AFLVideoStream.swift */; };
+		203EE8A220591BEF00381435 /* AFLAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203EE8A120591BEF00381435 /* AFLAttribute.swift */; };
+		203EE8A420591C1F00381435 /* AFLUuid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203EE8A320591C1F00381435 /* AFLUuid.swift */; };
+		203EE8A620591C5D00381435 /* AFLEmbedToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203EE8A520591C5D00381435 /* AFLEmbedToken.swift */; };
+		203EE8A820591C9C00381435 /* AFLSeasonWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203EE8A720591C9C00381435 /* AFLSeasonWrapper.swift */; };
+		203EE8AA20591CBD00381435 /* AFLSeason.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203EE8A920591CBD00381435 /* AFLSeason.swift */; };
+		203EE8AC20591CFC00381435 /* AFLRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203EE8AB20591CFC00381435 /* AFLRound.swift */; };
+		203EE8AE20591D2300381435 /* OoyalaSecureToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203EE8AD20591D2300381435 /* OoyalaSecureToken.swift */; };
+		203EE8B020591DBD00381435 /* OoyalaVideoInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203EE8AF20591DBD00381435 /* OoyalaVideoInformation.swift */; };
+		203EE8B220591E3800381435 /* OoyalaAuthorizationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203EE8B120591E3800381435 /* OoyalaAuthorizationData.swift */; };
+		203EE8B420591E5100381435 /* OoyalaStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203EE8B320591E5100381435 /* OoyalaStream.swift */; };
+		203EE8B620591E6A00381435 /* OoyalaUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203EE8B520591E6A00381435 /* OoyalaUrl.swift */; };
+		203EE8B920591EC600381435 /* BigpondAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203EE8B820591EC600381435 /* BigpondAuthentication.swift */; };
+		203EE8BB20591EE000381435 /* BigpondAuthenticationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203EE8BA20591EE000381435 /* BigpondAuthenticationData.swift */; };
+		203EE8BD20591F1F00381435 /* MoyaProvider+FootyCast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203EE8BC20591F1F00381435 /* MoyaProvider+FootyCast.swift */; };
+		203EE8BF20592B5F00381435 /* ReplayRoundsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203EE8BE20592B5F00381435 /* ReplayRoundsTableViewController.swift */; };
+		203EE8C1205935B500381435 /* AFLRoundVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203EE8C0205935B500381435 /* AFLRoundVideo.swift */; };
+		203EE8C3205935ED00381435 /* round_videos.json in Resources */ = {isa = PBXBuildFile; fileRef = 203EE8C2205935ED00381435 /* round_videos.json */; };
+		20412E441ECA66F4009140FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20412E431ECA66F4009140FC /* AppDelegate.swift */; };
+		20412E4B1ECA66F4009140FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20412E4A1ECA66F4009140FC /* Assets.xcassets */; };
+		20412E4E1ECA66F4009140FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20412E4C1ECA66F4009140FC /* LaunchScreen.storyboard */; };
+		2056319D2044D6CC0088B27C /* teams.json in Resources */ = {isa = PBXBuildFile; fileRef = 2056319B2044D6CC0088B27C /* teams.json */; };
+		2056319E2044D6CC0088B27C /* rounds.json in Resources */ = {isa = PBXBuildFile; fileRef = 2056319C2044D6CC0088B27C /* rounds.json */; };
+		205631C12044D7930088B27C /* live_response.json in Resources */ = {isa = PBXBuildFile; fileRef = 205631C02044D7930088B27C /* live_response.json */; };
+		206363BC2054CBD300C07F9C /* AFL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206363BB2054CBD300C07F9C /* AFL.swift */; };
+		20704D28205B7F57008CD0DE /* AFLVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20704D27205B7F57008CD0DE /* AFLVideo.swift */; };
+		20704D2B205CA363008CD0DE /* UIAlertController+FootyCast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20704D2A205CA363008CD0DE /* UIAlertController+FootyCast.swift */; };
+		20704D2D205CFAD3008CD0DE /* Valet+FootyCast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20704D2C205CFAD3008CD0DE /* Valet+FootyCast.swift */; };
+		20704D32205F6B1E008CD0DE /* UIViewController+GoogleCast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20704D31205F6B1E008CD0DE /* UIViewController+GoogleCast.swift */; };
+		20F67043206630900092CC95 /* Telstra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F67042206630900092CC95 /* Telstra.swift */; };
+		20FA9B522040FE10004C0760 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FA9B512040FE10004C0760 /* Coordinator.swift */; };
+		20FA9B542040FE29004C0760 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FA9B532040FE29004C0760 /* AppCoordinator.swift */; };
+		20FA9B5620411753004C0760 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FA9B5520411753004C0760 /* TabBarCoordinator.swift */; };
+		20FA9B5A204119E2004C0760 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FA9B59204119E2004C0760 /* Storyboards.swift */; };
+		20FA9B5D20411A25004C0760 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20FA9B5C20411A25004C0760 /* Home.storyboard */; };
+		20FA9B6020411A3A004C0760 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FA9B5F20411A3A004C0760 /* HomeViewController.swift */; };
+		20FA9B632042247A004C0760 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20FA9B622042247A004C0760 /* Settings.storyboard */; };
+		20FA9B6520422489004C0760 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FA9B6420422489004C0760 /* SettingsViewController.swift */; };
+		20FA9B6720422587004C0760 /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FA9B6620422587004C0760 /* SettingsCoordinator.swift */; };
+		20FA9B6B20429551004C0760 /* Replays.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20FA9B6A20429551004C0760 /* Replays.storyboard */; };
+		20FA9B6D20429568004C0760 /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20FA9B6C20429568004C0760 /* Live.storyboard */; };
+		20FA9B6F204296F8004C0760 /* ReplayTypesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FA9B6E204296F8004C0760 /* ReplayTypesTableViewController.swift */; };
+		20FA9B7120429732004C0760 /* ReplaysCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FA9B7020429732004C0760 /* ReplaysCoordinator.swift */; };
+		20FA9B73204297C3004C0760 /* LiveCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FA9B72204297C3004C0760 /* LiveCoordinator.swift */; };
+		20FA9B752042B006004C0760 /* LiveVideosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FA9B742042B006004C0760 /* LiveVideosTableViewController.swift */; };
+		49925C86FFD2767CEB83C5E7 /* Pods_FootyCast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72ED2B4580FD72A5ABBAE0FA /* Pods_FootyCast.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		200B551E205A557500B0504D /* ReplayRoundVideosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplayRoundVideosViewController.swift; sourceTree = "<group>"; };
+		200B5520205A574D00B0504D /* AFLRoundCategoriesWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFLRoundCategoriesWrapper.swift; sourceTree = "<group>"; };
+		200B5522205A5AFD00B0504D /* AFLRoundCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFLRoundCategory.swift; sourceTree = "<group>"; };
+		200B5524205A7A2B00B0504D /* VideoPlayerCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerCoordinator.swift; sourceTree = "<group>"; };
+		201119B020611595000C4CA0 /* InstagramActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramActivityIndicator.swift; sourceTree = "<group>"; };
+		201119B2206115C3000C4CA0 /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
+		2023D2582065CA2600E8ACC5 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		2032DD282054D79B0047DF1E /* Bigpond.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bigpond.swift; sourceTree = "<group>"; };
+		2032DD2A2054E0FF0047DF1E /* bigpond_auth.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bigpond_auth.json; sourceTree = "<group>"; };
+		2032DD2E2055EB810047DF1E /* media_token.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = media_token.json; sourceTree = "<group>"; };
+		2032DD302055EBE70047DF1E /* session.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = session.json; sourceTree = "<group>"; };
+		2032DD322055F16B0047DF1E /* Ooyala.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ooyala.swift; sourceTree = "<group>"; };
+		2032DD34205604530047DF1E /* Defaults+FootyCast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Defaults+FootyCast.swift"; sourceTree = "<group>"; };
+		2032DD3620562DCE0047DF1E /* embed_token.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = embed_token.json; sourceTree = "<group>"; };
+		2032DD38205634450047DF1E /* secure_token.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = secure_token.json; sourceTree = "<group>"; };
+		203EE8952059039500381435 /* seasons.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = seasons.json; sourceTree = "<group>"; };
+		203EE89920591A2700381435 /* AFLMediaToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFLMediaToken.swift; sourceTree = "<group>"; };
+		203EE89B20591BA400381435 /* AFLLiveVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFLLiveVideo.swift; sourceTree = "<group>"; };
+		203EE89D20591BC400381435 /* AFLTeam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFLTeam.swift; sourceTree = "<group>"; };
+		203EE89F20591BD900381435 /* AFLVideoStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFLVideoStream.swift; sourceTree = "<group>"; };
+		203EE8A120591BEF00381435 /* AFLAttribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFLAttribute.swift; sourceTree = "<group>"; };
+		203EE8A320591C1F00381435 /* AFLUuid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFLUuid.swift; sourceTree = "<group>"; };
+		203EE8A520591C5D00381435 /* AFLEmbedToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFLEmbedToken.swift; sourceTree = "<group>"; };
+		203EE8A720591C9C00381435 /* AFLSeasonWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFLSeasonWrapper.swift; sourceTree = "<group>"; };
+		203EE8A920591CBD00381435 /* AFLSeason.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFLSeason.swift; sourceTree = "<group>"; };
+		203EE8AB20591CFC00381435 /* AFLRound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFLRound.swift; sourceTree = "<group>"; };
+		203EE8AD20591D2300381435 /* OoyalaSecureToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OoyalaSecureToken.swift; sourceTree = "<group>"; };
+		203EE8AF20591DBD00381435 /* OoyalaVideoInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OoyalaVideoInformation.swift; sourceTree = "<group>"; };
+		203EE8B120591E3800381435 /* OoyalaAuthorizationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OoyalaAuthorizationData.swift; sourceTree = "<group>"; };
+		203EE8B320591E5100381435 /* OoyalaStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OoyalaStream.swift; sourceTree = "<group>"; };
+		203EE8B520591E6A00381435 /* OoyalaUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OoyalaUrl.swift; sourceTree = "<group>"; };
+		203EE8B820591EC600381435 /* BigpondAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigpondAuthentication.swift; sourceTree = "<group>"; };
+		203EE8BA20591EE000381435 /* BigpondAuthenticationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigpondAuthenticationData.swift; sourceTree = "<group>"; };
+		203EE8BC20591F1F00381435 /* MoyaProvider+FootyCast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MoyaProvider+FootyCast.swift"; sourceTree = "<group>"; };
+		203EE8BE20592B5F00381435 /* ReplayRoundsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplayRoundsTableViewController.swift; sourceTree = "<group>"; };
+		203EE8C0205935B500381435 /* AFLRoundVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFLRoundVideo.swift; sourceTree = "<group>"; };
+		203EE8C2205935ED00381435 /* round_videos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = round_videos.json; sourceTree = "<group>"; };
+		20412E401ECA66F4009140FC /* FootyCast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FootyCast.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		20412E431ECA66F4009140FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		20412E4A1ECA66F4009140FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		20412E4D1ECA66F4009140FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		20412E4F1ECA66F4009140FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2056319B2044D6CC0088B27C /* teams.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = teams.json; sourceTree = "<group>"; };
+		2056319C2044D6CC0088B27C /* rounds.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rounds.json; sourceTree = "<group>"; };
+		205631C02044D7930088B27C /* live_response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = live_response.json; sourceTree = "<group>"; };
+		206363BB2054CBD300C07F9C /* AFL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFL.swift; sourceTree = "<group>"; };
+		20704D27205B7F57008CD0DE /* AFLVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFLVideo.swift; sourceTree = "<group>"; };
+		20704D2A205CA363008CD0DE /* UIAlertController+FootyCast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+FootyCast.swift"; sourceTree = "<group>"; };
+		20704D2C205CFAD3008CD0DE /* Valet+FootyCast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Valet+FootyCast.swift"; sourceTree = "<group>"; };
+		20704D31205F6B1E008CD0DE /* UIViewController+GoogleCast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+GoogleCast.swift"; sourceTree = "<group>"; };
+		20F67042206630900092CC95 /* Telstra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Telstra.swift; sourceTree = "<group>"; };
+		20FA9B512040FE10004C0760 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		20FA9B532040FE29004C0760 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		20FA9B5520411753004C0760 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		20FA9B59204119E2004C0760 /* Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
+		20FA9B5C20411A25004C0760 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		20FA9B5F20411A3A004C0760 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		20FA9B622042247A004C0760 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		20FA9B6420422489004C0760 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		20FA9B6620422587004C0760 /* SettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
+		20FA9B6A20429551004C0760 /* Replays.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Replays.storyboard; sourceTree = "<group>"; };
+		20FA9B6C20429568004C0760 /* Live.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Live.storyboard; sourceTree = "<group>"; };
+		20FA9B6E204296F8004C0760 /* ReplayTypesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplayTypesTableViewController.swift; sourceTree = "<group>"; };
+		20FA9B7020429732004C0760 /* ReplaysCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplaysCoordinator.swift; sourceTree = "<group>"; };
+		20FA9B72204297C3004C0760 /* LiveCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveCoordinator.swift; sourceTree = "<group>"; };
+		20FA9B742042B006004C0760 /* LiveVideosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveVideosTableViewController.swift; sourceTree = "<group>"; };
+		592B7089BE418BAC1CB5C873 /* Pods-FootyCast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FootyCast.release.xcconfig"; path = "Pods/Target Support Files/Pods-FootyCast/Pods-FootyCast.release.xcconfig"; sourceTree = "<group>"; };
+		68992FA55E84364DD11484D1 /* Pods-FootyCast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FootyCast.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FootyCast/Pods-FootyCast.debug.xcconfig"; sourceTree = "<group>"; };
+		72ED2B4580FD72A5ABBAE0FA /* Pods_FootyCast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FootyCast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		20412E3D1ECA66F4009140FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49925C86FFD2767CEB83C5E7 /* Pods_FootyCast.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10B9053C3EC36B89D72A3ECF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				68992FA55E84364DD11484D1 /* Pods-FootyCast.debug.xcconfig */,
+				592B7089BE418BAC1CB5C873 /* Pods-FootyCast.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		201119AF20611588000C4CA0 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				201119B020611595000C4CA0 /* InstagramActivityIndicator.swift */,
+				201119B2206115C3000C4CA0 /* SpinnerViewController.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		2023D2572065CA1000E8ACC5 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				2023D2582065CA2600E8ACC5 /* Authentication.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		203EE897205919F000381435 /* AFL */ = {
+			isa = PBXGroup;
+			children = (
+				203EE8A120591BEF00381435 /* AFLAttribute.swift */,
+				203EE8A520591C5D00381435 /* AFLEmbedToken.swift */,
+				203EE89B20591BA400381435 /* AFLLiveVideo.swift */,
+				203EE89920591A2700381435 /* AFLMediaToken.swift */,
+				203EE8AB20591CFC00381435 /* AFLRound.swift */,
+				200B5522205A5AFD00B0504D /* AFLRoundCategory.swift */,
+				200B5520205A574D00B0504D /* AFLRoundCategoriesWrapper.swift */,
+				203EE8C0205935B500381435 /* AFLRoundVideo.swift */,
+				203EE8A920591CBD00381435 /* AFLSeason.swift */,
+				203EE8A720591C9C00381435 /* AFLSeasonWrapper.swift */,
+				203EE89D20591BC400381435 /* AFLTeam.swift */,
+				203EE8A320591C1F00381435 /* AFLUuid.swift */,
+				20704D27205B7F57008CD0DE /* AFLVideo.swift */,
+				203EE89F20591BD900381435 /* AFLVideoStream.swift */,
+			);
+			path = AFL;
+			sourceTree = "<group>";
+		};
+		203EE898205919F800381435 /* Ooyala */ = {
+			isa = PBXGroup;
+			children = (
+				203EE8B120591E3800381435 /* OoyalaAuthorizationData.swift */,
+				203EE8AD20591D2300381435 /* OoyalaSecureToken.swift */,
+				203EE8B320591E5100381435 /* OoyalaStream.swift */,
+				203EE8B520591E6A00381435 /* OoyalaUrl.swift */,
+				203EE8AF20591DBD00381435 /* OoyalaVideoInformation.swift */,
+			);
+			path = Ooyala;
+			sourceTree = "<group>";
+		};
+		203EE8B720591E9A00381435 /* Bigpond */ = {
+			isa = PBXGroup;
+			children = (
+				203EE8B820591EC600381435 /* BigpondAuthentication.swift */,
+				203EE8BA20591EE000381435 /* BigpondAuthenticationData.swift */,
+			);
+			path = Bigpond;
+			sourceTree = "<group>";
+		};
+		20412E371ECA66F4009140FC = {
+			isa = PBXGroup;
+			children = (
+				20FA9B58204119C6004C0760 /* Constants */,
+				20412E421ECA66F4009140FC /* FootyCast */,
+				20412E411ECA66F4009140FC /* Products */,
+				10B9053C3EC36B89D72A3ECF /* Pods */,
+				E7C44B462449DD3D7BD7C360 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		20412E411ECA66F4009140FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20412E401ECA66F4009140FC /* FootyCast.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20412E421ECA66F4009140FC /* FootyCast */ = {
+			isa = PBXGroup;
+			children = (
+				20704D29205CA345008CD0DE /* Extensions */,
+				2056319A2044D6CC0088B27C /* Data */,
+				20FA9B5B204119FE004C0760 /* UI */,
+				20FA9B502040FE00004C0760 /* Coordinators */,
+				205631A02044D6F00088B27C /* Models */,
+				205631AB2044D7030088B27C /* Network */,
+				20412E431ECA66F4009140FC /* AppDelegate.swift */,
+				20412E4A1ECA66F4009140FC /* Assets.xcassets */,
+				20412E4C1ECA66F4009140FC /* LaunchScreen.storyboard */,
+				20412E4F1ECA66F4009140FC /* Info.plist */,
+			);
+			path = FootyCast;
+			sourceTree = "<group>";
+		};
+		2056319A2044D6CC0088B27C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				205631BF2044D7750088B27C /* Testing */,
+				2056319B2044D6CC0088B27C /* teams.json */,
+				2056319C2044D6CC0088B27C /* rounds.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		205631A02044D6F00088B27C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				203EE897205919F000381435 /* AFL */,
+				203EE8B720591E9A00381435 /* Bigpond */,
+				203EE898205919F800381435 /* Ooyala */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		205631AB2044D7030088B27C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2023D2572065CA1000E8ACC5 /* Authentication */,
+				206363BA2054CB9600C07F9C /* Targets */,
+				203EE8BC20591F1F00381435 /* MoyaProvider+FootyCast.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		205631BF2044D7750088B27C /* Testing */ = {
+			isa = PBXGroup;
+			children = (
+				2032DD2A2054E0FF0047DF1E /* bigpond_auth.json */,
+				2032DD3620562DCE0047DF1E /* embed_token.json */,
+				205631C02044D7930088B27C /* live_response.json */,
+				2032DD2E2055EB810047DF1E /* media_token.json */,
+				203EE8C2205935ED00381435 /* round_videos.json */,
+				203EE8952059039500381435 /* seasons.json */,
+				2032DD38205634450047DF1E /* secure_token.json */,
+				2032DD302055EBE70047DF1E /* session.json */,
+			);
+			path = Testing;
+			sourceTree = "<group>";
+		};
+		206363BA2054CB9600C07F9C /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				206363BB2054CBD300C07F9C /* AFL.swift */,
+				2032DD282054D79B0047DF1E /* Bigpond.swift */,
+				2032DD322055F16B0047DF1E /* Ooyala.swift */,
+				20F67042206630900092CC95 /* Telstra.swift */,
+			);
+			path = Targets;
+			sourceTree = "<group>";
+		};
+		20704D29205CA345008CD0DE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2032DD34205604530047DF1E /* Defaults+FootyCast.swift */,
+				20704D2A205CA363008CD0DE /* UIAlertController+FootyCast.swift */,
+				20704D2C205CFAD3008CD0DE /* Valet+FootyCast.swift */,
+				20704D31205F6B1E008CD0DE /* UIViewController+GoogleCast.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		20FA9B502040FE00004C0760 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				20FA9B512040FE10004C0760 /* Coordinator.swift */,
+				20FA9B5520411753004C0760 /* TabBarCoordinator.swift */,
+				20FA9B532040FE29004C0760 /* AppCoordinator.swift */,
+				20FA9B6620422587004C0760 /* SettingsCoordinator.swift */,
+				20FA9B7020429732004C0760 /* ReplaysCoordinator.swift */,
+				20FA9B72204297C3004C0760 /* LiveCoordinator.swift */,
+				200B5524205A7A2B00B0504D /* VideoPlayerCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		20FA9B58204119C6004C0760 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				20FA9B59204119E2004C0760 /* Storyboards.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		20FA9B5B204119FE004C0760 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				201119AF20611588000C4CA0 /* Custom */,
+				20FA9B6920429546004C0760 /* Replays */,
+				20FA9B6820429541004C0760 /* Live */,
+				20FA9B612042246B004C0760 /* Settings */,
+				20FA9B5E20411A2B004C0760 /* Home */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		20FA9B5E20411A2B004C0760 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				20FA9B5C20411A25004C0760 /* Home.storyboard */,
+				20FA9B5F20411A3A004C0760 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		20FA9B612042246B004C0760 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				20FA9B622042247A004C0760 /* Settings.storyboard */,
+				20FA9B6420422489004C0760 /* SettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		20FA9B6820429541004C0760 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				20FA9B6C20429568004C0760 /* Live.storyboard */,
+				20FA9B742042B006004C0760 /* LiveVideosTableViewController.swift */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		20FA9B6920429546004C0760 /* Replays */ = {
+			isa = PBXGroup;
+			children = (
+				20FA9B6A20429551004C0760 /* Replays.storyboard */,
+				20FA9B6E204296F8004C0760 /* ReplayTypesTableViewController.swift */,
+				203EE8BE20592B5F00381435 /* ReplayRoundsTableViewController.swift */,
+				200B551E205A557500B0504D /* ReplayRoundVideosViewController.swift */,
+			);
+			path = Replays;
+			sourceTree = "<group>";
+		};
+		E7C44B462449DD3D7BD7C360 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72ED2B4580FD72A5ABBAE0FA /* Pods_FootyCast.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		20412E3F1ECA66F4009140FC /* FootyCast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20412E521ECA66F4009140FC /* Build configuration list for PBXNativeTarget "FootyCast" */;
+			buildPhases = (
+				105D088FE864B526722B2C9F /* [CP] Check Pods Manifest.lock */,
+				20FA9B5720411993004C0760 /* SwiftGen */,
+				20412E3C1ECA66F4009140FC /* Sources */,
+				20412E3D1ECA66F4009140FC /* Frameworks */,
+				20412E3E1ECA66F4009140FC /* Resources */,
+				4F09EC15BB38C3D2CA2B08F8 /* [CP] Embed Pods Frameworks */,
+				8DA202B8307246EDF2145A6F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FootyCast;
+			productName = FootyCast;
+			productReference = 20412E401ECA66F4009140FC /* FootyCast.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20412E381ECA66F4009140FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Evan Robertson";
+				TargetAttributes = {
+					20412E3F1ECA66F4009140FC = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 5N84JH52EJ;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 20412E3B1ECA66F4009140FC /* Build configuration list for PBXProject "FootyCast" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 20412E371ECA66F4009140FC;
+			productRefGroup = 20412E411ECA66F4009140FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				20412E3F1ECA66F4009140FC /* FootyCast */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		20412E3E1ECA66F4009140FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				203EE8962059039600381435 /* seasons.json in Resources */,
+				2032DD39205634450047DF1E /* secure_token.json in Resources */,
+				2032DD2F2055EB810047DF1E /* media_token.json in Resources */,
+				20FA9B6B20429551004C0760 /* Replays.storyboard in Resources */,
+				2032DD2B2054E0FF0047DF1E /* bigpond_auth.json in Resources */,
+				20FA9B5D20411A25004C0760 /* Home.storyboard in Resources */,
+				20412E4E1ECA66F4009140FC /* LaunchScreen.storyboard in Resources */,
+				2032DD312055EBE80047DF1E /* session.json in Resources */,
+				20FA9B632042247A004C0760 /* Settings.storyboard in Resources */,
+				205631C12044D7930088B27C /* live_response.json in Resources */,
+				203EE8C3205935ED00381435 /* round_videos.json in Resources */,
+				2056319E2044D6CC0088B27C /* rounds.json in Resources */,
+				2056319D2044D6CC0088B27C /* teams.json in Resources */,
+				20412E4B1ECA66F4009140FC /* Assets.xcassets in Resources */,
+				2032DD3720562DCE0047DF1E /* embed_token.json in Resources */,
+				20FA9B6D20429568004C0760 /* Live.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		105D088FE864B526722B2C9F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FootyCast-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		20FA9B5720411993004C0760 /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which \"$PODS_ROOT\"/SwiftGen/bin/swiftgen >/dev/null; then\nset -e\n\"$PODS_ROOT\"/SwiftGen/bin/swiftgen storyboards -t swift4 \"$PROJECT_DIR\" --output \"$PROJECT_DIR/Constants/Storyboards.swift\"\nelse\necho \"warning: SwiftGen not installed, download it from https://github.com/SwiftGen/SwiftGen\"\nfi";
+		};
+		4F09EC15BB38C3D2CA2B08F8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FootyCast/Pods-FootyCast-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/HydraAsync/Hydra.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyUserDefaults/SwiftyUserDefaults.framework",
+				"${BUILT_PRODUCTS_DIR}/Valet/Valet.framework",
+				"${PODS_ROOT}/google-cast-sdk/GoogleCastSDK-ios-4.0.2/GoogleCast.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hydra.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyUserDefaults.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Valet.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleCast.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FootyCast/Pods-FootyCast-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DA202B8307246EDF2145A6F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FootyCast/Pods-FootyCast-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		20412E3C1ECA66F4009140FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20FA9B73204297C3004C0760 /* LiveCoordinator.swift in Sources */,
+				203EE8AC20591CFC00381435 /* AFLRound.swift in Sources */,
+				203EE8B920591EC600381435 /* BigpondAuthentication.swift in Sources */,
+				203EE8BB20591EE000381435 /* BigpondAuthenticationData.swift in Sources */,
+				20FA9B522040FE10004C0760 /* Coordinator.swift in Sources */,
+				206363BC2054CBD300C07F9C /* AFL.swift in Sources */,
+				200B5523205A5AFD00B0504D /* AFLRoundCategory.swift in Sources */,
+				203EE8A220591BEF00381435 /* AFLAttribute.swift in Sources */,
+				203EE8A420591C1F00381435 /* AFLUuid.swift in Sources */,
+				2032DD292054D79C0047DF1E /* Bigpond.swift in Sources */,
+				203EE8B220591E3800381435 /* OoyalaAuthorizationData.swift in Sources */,
+				20FA9B6520422489004C0760 /* SettingsViewController.swift in Sources */,
+				203EE8B620591E6A00381435 /* OoyalaUrl.swift in Sources */,
+				2032DD35205604530047DF1E /* Defaults+FootyCast.swift in Sources */,
+				203EE8B020591DBD00381435 /* OoyalaVideoInformation.swift in Sources */,
+				203EE8C1205935B500381435 /* AFLRoundVideo.swift in Sources */,
+				201119B3206115C3000C4CA0 /* SpinnerViewController.swift in Sources */,
+				2032DD332055F16B0047DF1E /* Ooyala.swift in Sources */,
+				20704D28205B7F57008CD0DE /* AFLVideo.swift in Sources */,
+				200B5521205A574D00B0504D /* AFLRoundCategoriesWrapper.swift in Sources */,
+				203EE8AE20591D2300381435 /* OoyalaSecureToken.swift in Sources */,
+				20FA9B542040FE29004C0760 /* AppCoordinator.swift in Sources */,
+				203EE8A620591C5D00381435 /* AFLEmbedToken.swift in Sources */,
+				200B551F205A557500B0504D /* ReplayRoundVideosViewController.swift in Sources */,
+				20FA9B7120429732004C0760 /* ReplaysCoordinator.swift in Sources */,
+				20704D32205F6B1E008CD0DE /* UIViewController+GoogleCast.swift in Sources */,
+				203EE8B420591E5100381435 /* OoyalaStream.swift in Sources */,
+				20704D2B205CA363008CD0DE /* UIAlertController+FootyCast.swift in Sources */,
+				203EE89A20591A2700381435 /* AFLMediaToken.swift in Sources */,
+				203EE8AA20591CBD00381435 /* AFLSeason.swift in Sources */,
+				203EE89E20591BC400381435 /* AFLTeam.swift in Sources */,
+				20FA9B5A204119E2004C0760 /* Storyboards.swift in Sources */,
+				203EE8A820591C9C00381435 /* AFLSeasonWrapper.swift in Sources */,
+				203EE89C20591BA400381435 /* AFLLiveVideo.swift in Sources */,
+				20FA9B752042B006004C0760 /* LiveVideosTableViewController.swift in Sources */,
+				203EE8BD20591F1F00381435 /* MoyaProvider+FootyCast.swift in Sources */,
+				20FA9B6F204296F8004C0760 /* ReplayTypesTableViewController.swift in Sources */,
+				2023D2592065CA2600E8ACC5 /* Authentication.swift in Sources */,
+				20FA9B6020411A3A004C0760 /* HomeViewController.swift in Sources */,
+				20F67043206630900092CC95 /* Telstra.swift in Sources */,
+				20FA9B5620411753004C0760 /* TabBarCoordinator.swift in Sources */,
+				20704D2D205CFAD3008CD0DE /* Valet+FootyCast.swift in Sources */,
+				203EE8A020591BD900381435 /* AFLVideoStream.swift in Sources */,
+				203EE8BF20592B5F00381435 /* ReplayRoundsTableViewController.swift in Sources */,
+				20FA9B6720422587004C0760 /* SettingsCoordinator.swift in Sources */,
+				20412E441ECA66F4009140FC /* AppDelegate.swift in Sources */,
+				201119B120611595000C4CA0 /* InstagramActivityIndicator.swift in Sources */,
+				200B5525205A7A2B00B0504D /* VideoPlayerCoordinator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		20412E4C1ECA66F4009140FC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20412E4D1ECA66F4009140FC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		20412E501ECA66F4009140FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		20412E511ECA66F4009140FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		20412E531ECA66F4009140FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68992FA55E84364DD11484D1 /* Pods-FootyCast.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5N84JH52EJ;
+				INFOPLIST_FILE = FootyCast/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.evanrobertson.FootyCast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "68f619d7-818c-4c94-b29e-9cf5cbaa814d";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.evanrobertson.FootyCast";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		20412E541ECA66F4009140FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 592B7089BE418BAC1CB5C873 /* Pods-FootyCast.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 5N84JH52EJ;
+				INFOPLIST_FILE = FootyCast/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.evanrobertson.FootyCast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "555be5d7-d136-4b5b-80f1-85aafa0f217b";
+				PROVISIONING_PROFILE_SPECIFIER = "match AdHoc com.evanrobertson.FootyCast";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		20412E3B1ECA66F4009140FC /* Build configuration list for PBXProject "FootyCast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20412E501ECA66F4009140FC /* Debug */,
+				20412E511ECA66F4009140FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20412E521ECA66F4009140FC /* Build configuration list for PBXNativeTarget "FootyCast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20412E531ECA66F4009140FC /* Debug */,
+				20412E541ECA66F4009140FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 20412E381ECA66F4009140FC /* Project object */;
+}

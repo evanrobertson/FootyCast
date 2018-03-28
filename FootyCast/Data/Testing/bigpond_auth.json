@@ -1,0 +1,10 @@
+{
+    "responseCode": 0,
+    "responseMessage": "Success",
+    "data": {
+        "artifactName": "BPSESSION",
+        "artifactValue": "",
+        "FQUN": "",
+        "amlbcookieValue": "22"
+    }
+}

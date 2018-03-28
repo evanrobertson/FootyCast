@@ -1,0 +1,121 @@
+{
+    "categories": [
+                   {
+                   "category": "Match Replays",
+                   "title": "Match Replays",
+                   "videos": [
+                              {
+                              "title": "GF: Crows v Tigers Q4",
+                              "description": "Watch the full replay of the fourth quarter",
+                              "externalId": "940414",
+                              "publisher": "AFLFLM",
+                              "customAttributes": [
+                                                   {
+                                                   "attrName": "ooyala published",
+                                                   "attrValue": "PublishedLocally"
+                                                   },
+                                                   {
+                                                   "attrName": "ooyala embed code",
+                                                   "attrValue": "92dXZ1YzE6cjpxNfJZzSjicwU7k11_cb"
+                                                   },
+                                                   {
+                                                   "attrName": "AFLClubExclusive",
+                                                   "attrValue": "No"
+                                                   }
+                                                   ],
+                              "programType": "Match Replays",
+                              "programCategory": "Match Replays",
+                              "thumbnailPath": "http://s.afl.com.au/staticfile/AFL Tenant/Media/Videos/Thumbnails/2017/Oct/940414_thumb_326x184.jpg",
+                              "entitlement": "BPS_MOB_AFL_VOD",
+                              "customPublishDate": "2017-09-30T04:00:10.000+0000",
+                              "publishDate": "2017-09-30T04:00:10.000+0000",
+                              "sizeRestricted": false
+                              },
+                              {
+                              "title": "GF: Crows v Tigers Q3",
+                              "description": "Watch the full replay of the third quarter",
+                              "externalId": "940400",
+                              "publisher": "AFLFLM",
+                              "customAttributes": [
+                                                   {
+                                                   "attrName": "AFLClubExclusive",
+                                                   "attrValue": "No"
+                                                   },
+                                                   {
+                                                   "attrName": "ooyala published",
+                                                   "attrValue": "PublishedLocally"
+                                                   },
+                                                   {
+                                                   "attrName": "ooyala embed code",
+                                                   "attrValue": "kzNnZ1YzE6peulwKUStlDBhsuh4rg_sr"
+                                                   }
+                                                   ],
+                              "programType": "Match Replays",
+                              "programCategory": "Match Replays",
+                              "thumbnailPath": "http://s.afl.com.au/staticfile/AFL Tenant/Media/Videos/Thumbnails/2017/Oct/940400_thumb_326x184.jpg",
+                              "entitlement": "BPS_MOB_AFL_VOD",
+                              "customPublishDate": "2017-09-30T04:00:06.000+0000",
+                              "publishDate": "2017-09-30T04:00:06.000+0000",
+                              "sizeRestricted": false
+                              },
+                              {
+                              "title": "GF: Crows v Tigers Q2",
+                              "description": "Watch the full replay of the second quarter",
+                              "externalId": "940398",
+                              "publisher": "AFLFLM",
+                              "customAttributes": [
+                                                   {
+                                                   "attrName": "AFLClubExclusive",
+                                                   "attrValue": "No"
+                                                   },
+                                                   {
+                                                   "attrName": "ooyala published",
+                                                   "attrValue": "PublishedLocally"
+                                                   },
+                                                   {
+                                                   "attrName": "ooyala embed code",
+                                                   "attrValue": "d5d3V1YzE62IAerkCBP31bgXWvFrhFEb"
+                                                   }
+                                                   ],
+                              "programType": "Match Replays",
+                              "programCategory": "Match Replays",
+                              "thumbnailPath": "http://s.afl.com.au/staticfile/AFL Tenant/Media/Videos/Thumbnails/2017/Oct/940398_thumb_326x184.jpg",
+                              "entitlement": "BPS_MOB_AFL_VOD",
+                              "customPublishDate": "2017-09-30T04:00:02.000+0000",
+                              "publishDate": "2017-09-30T04:00:02.000+0000",
+                              "sizeRestricted": false
+                              },
+                              {
+                              "title": "GF: Crows v Tigers Q1",
+                              "description": "Watch the full replay of the first quarter",
+                              "externalId": "940396",
+                              "publisher": "AFLFLM",
+                              "customAttributes": [
+                                                   {
+                                                   "attrName": "AFLClubExclusive",
+                                                   "attrValue": "No"
+                                                   },
+                                                   {
+                                                   "attrName": "ooyala published",
+                                                   "attrValue": "PublishedLocally"
+                                                   },
+                                                   {
+                                                   "attrName": "ooyala embed code",
+                                                   "attrValue": "FrbXV1YzE6rznbR-Lzwc5ogC4-8ealW7"
+                                                   }
+                                                   ],
+                              "programType": "Match Replays",
+                              "programCategory": "Match Replays",
+                              "thumbnailPath": "http://s.afl.com.au/staticfile/AFL Tenant/Media/Videos/Thumbnails/2017/Oct/940396_thumb_326x184.jpg",
+                              "entitlement": "BPS_MOB_AFL_VOD",
+                              "customPublishDate": "2017-09-30T04:00:00.000+0000",
+                              "publishDate": "2017-09-30T04:00:00.000+0000",
+                              "sizeRestricted": false
+                              }
+                              ],
+                   "pageNumber": 1,
+                   "pageSize": 50,
+                   "moreResults": false
+                   }
+                   ]
+}

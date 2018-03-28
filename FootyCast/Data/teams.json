@@ -1,0 +1,20 @@
+[
+    {"id": "1",  "name": "Adelaide",               "team_id": "10",   "thumb": "adel.gif"},
+    {"id": "2",  "name": "Brisbane",               "team_id": "20",   "thumb": "bris.gif"},
+    {"id": "3",  "name": "Carlton",                "team_id": "30",   "thumb": "carl.gif"},
+    {"id": "4",  "name": "Collingwood",            "team_id": "40",   "thumb": "coll.gif"},
+    {"id": "5",  "name": "Essendon",               "team_id": "50",   "thumb": "ess.gif"},
+    {"id": "6",  "name": "Fremantle",              "team_id": "60",   "thumb": "frem.gif"},
+    {"id": "7",  "name": "Gold Coast",             "team_id": "1000", "thumb": "gcfc.gif"},
+    {"id": "8",  "name": "Geelong",                "team_id": "70",   "thumb": "geel.gif"},
+    {"id": "9",  "name": "Greater Western Sydney", "team_id": "1010", "thumb": "gws.gif"},
+    {"id": "10", "name": "Hawthorn",               "team_id": "80",   "thumb": "haw.gif"},
+    {"id": "11", "name": "Melbourne",              "team_id": "90",   "thumb": "melb.gif"},
+    {"id": "12", "name": "North Melbourne",        "team_id": "100",  "thumb": "nmfc.gif"},
+    {"id": "13", "name": "Port Adelaide",          "team_id": "110",  "thumb": "port.gif"},
+    {"id": "14", "name": "Richmond",               "team_id": "120",  "thumb": "rich.gif"},
+    {"id": "15", "name": "St. Kilda",              "team_id": "130",  "thumb": "stk.gif"},
+    {"id": "16", "name": "Sydney",                 "team_id": "160",  "thumb": "syd.gif"},
+    {"id": "17", "name": "West Coast",             "team_id": "150",  "thumb": "wce.gif"},
+    {"id": "18", "name": "Western Bulldogs",       "team_id": "140",  "thumb": "wb.gif"}
+]

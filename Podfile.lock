@@ -1,0 +1,40 @@
+PODS:
+  - Alamofire (4.7.0)
+  - google-cast-sdk (4.0.2):
+    - google-cast-sdk/Core (= 4.0.2)
+  - google-cast-sdk/Core (4.0.2)
+  - HydraAsync (1.2.1)
+  - Moya (11.0.1):
+    - Moya/Core (= 11.0.1)
+  - Moya/Core (11.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 3.0)
+  - Result (3.2.4)
+  - SnapKit (4.0.0)
+  - SwiftGen (5.2.1)
+  - SwiftyUserDefaults (3.0.1)
+  - Valet (3.0.0)
+
+DEPENDENCIES:
+  - google-cast-sdk (~> 4.0)
+  - HydraAsync
+  - Moya
+  - SnapKit
+  - SwiftGen
+  - SwiftyUserDefaults
+  - Valet
+
+SPEC CHECKSUMS:
+  Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
+  google-cast-sdk: 64e135f63f6c1d7d8e5ea8d240ae6c918877ce62
+  HydraAsync: 8f2ab62d57e140b4ca587ae0f66e1eb04e8e6965
+  Moya: 3d594ada51a21cc02b18739ab578a1984f900c8a
+  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  SwiftGen: 444b4c467e512a4812b8a800d731643fd265139e
+  SwiftyUserDefaults: 3d273b1739b68ada3145dc754a70ec775bc5c8be
+  Valet: a0955a655898afbf12c7cb25ccb72283743b17bd
+
+PODFILE CHECKSUM: 07f82adf0bdb8f2e74fde9a9f7c4bc500d8336a0
+
+COCOAPODS: 1.4.0

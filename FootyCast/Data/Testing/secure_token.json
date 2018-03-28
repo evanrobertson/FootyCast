@@ -1,0 +1,50 @@
+{
+    "authorization_data": {
+        "1yNGE5dDoyTdUKykqSeTysvmgup-rvS1": {
+            "authorized": true,
+            "code": "0",
+            "message": "authorized",
+            "request_timestamp": "1520828482",
+            "retry": null,
+            "synd_rule_failures": null,
+            "require_mid_stream_check": false,
+            "require_heartbeat": false,
+            "restrict_devices": false,
+            "streams": [{
+                        "delivery_type": "hls",
+                        "url": {
+                        "format": "encoded",
+                        "data": "",
+                        "telstra_signing_expire": 1520839282
+                        },
+                        "aspect_ratio": "4:3",
+                        "is_live_stream": true,
+                        "token_expire": 1520839282
+                        }]
+        }
+    },
+    "user_info": {
+        "ip_address": "",
+        "domain": "http://www.ooyala.com",
+        "request_timestamp": "",
+        "device": "html5",
+        "account_id": "",
+        "postal_code": "",
+        "language": "en;q=1.0",
+        "country": "AU",
+        "timezone": 11.0,
+        "continent": ""
+    },
+    "debug_data": {
+        "server_latency": "35.128785",
+        "request_id": "",
+        "user_info": {
+            "request_timestamp": "1520828482"
+        },
+        "provider_enabled_ssl": false,
+        "provider_not_use_cookies": false
+    },
+    "auth_token": "",
+    "auth_token_expires": 1520829082,
+    "signature": ""
+}
