@@ -21,7 +21,6 @@ class ReplaysCoordinator : RootViewCoordinator {
     private let stubbing: Stubbing
     
     private lazy var navigationController: UINavigationController = {
-        
         return UINavigationController(rootViewController: replayTypesTableViewController)
     }()
     
@@ -124,7 +123,13 @@ class ReplaysCoordinator : RootViewCoordinator {
             
             try videoPlayerCoordinator.showVideo(video, onViewController: rootViewController) {
                 // Dismiss indicator
-                self.rootViewController.dismiss(animated: true, completion: nil)
+                self.rootViewController.dismiss(animated: true) {
+                    
+                    let castState = GCKCastContext.sharedInstance().castState
+                    if castState == .connected || castState == .connecting {
+                        GCKCastContext.sharedInstance().presentDefaultExpandedMediaControls()
+                    }
+                }
             }
         } catch {
             handleVideoPlayerError(error: error)
