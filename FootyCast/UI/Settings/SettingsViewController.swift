@@ -14,6 +14,7 @@ class SettingsViewController : UITableViewController {
     @IBOutlet weak var usernameTextField: SettingsTextField!
     @IBOutlet weak var passwordTextField: SettingsTextField!
     @IBOutlet weak var appTokenTextField: SettingsTextField!
+    @IBOutlet weak var versionLabel: UILabel!
     
     var saveButtonItem: UIBarButtonItem!
     
@@ -37,6 +38,15 @@ class SettingsViewController : UITableViewController {
         usernameTextField.delegate = self
         passwordTextField.delegate = self
         appTokenTextField.delegate = self
+        
+        if let build = Bundle.main.infoDictionary?["CFBundleVersion"],
+            let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] {
+            versionLabel.text = "FootyCast \(version) (\(build))"
+        } else {
+            versionLabel.text = "FootyCast"
+        }
+        
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {

@@ -17,6 +17,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="SwF-kw-afR">
+                            <rect key="frame" x="0.0" y="339.5" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FootyCast 1.0.0 (2)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TTe-G5-ALz">
+                                    <rect key="frame" x="8" y="8" width="359" height="28"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailingMargin" secondItem="TTe-G5-ALz" secondAttribute="trailing" id="6KQ-Qz-1rv"/>
+                                <constraint firstAttribute="bottomMargin" secondItem="TTe-G5-ALz" secondAttribute="bottom" id="Ih2-eL-Uta"/>
+                                <constraint firstItem="TTe-G5-ALz" firstAttribute="leading" secondItem="SwF-kw-afR" secondAttribute="leadingMargin" id="bIe-4x-Ul0"/>
+                                <constraint firstItem="TTe-G5-ALz" firstAttribute="top" secondItem="SwF-kw-afR" secondAttribute="topMargin" id="gEz-1y-8iM"/>
+                            </constraints>
+                        </view>
                         <sections>
                             <tableViewSection headerTitle="Live Pass (Paid)" id="leH-9R-gkZ">
                                 <cells>
@@ -144,6 +163,7 @@
                         <outlet property="appTokenTextField" destination="iUn-qu-NR6" id="YjX-TT-7w0"/>
                         <outlet property="passwordTextField" destination="9zR-B6-rmS" id="7YC-st-xCn"/>
                         <outlet property="usernameTextField" destination="BDN-Wp-cEi" id="qGs-j9-0YT"/>
+                        <outlet property="versionLabel" destination="TTe-G5-ALz" id="KIz-rn-kNJ"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zi5-N5-eYH" userLabel="First Responder" sceneMemberID="firstResponder"/>
