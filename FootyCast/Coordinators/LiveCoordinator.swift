@@ -52,14 +52,11 @@ class LiveCoordinator : RootViewCoordinator {
     func start() {
         liveVideosViewController.delegate = self
         
-        async { _ -> ([AFLLiveVideo]) in
-            let mediaToken = try await(self.aflProvider.request(.mediaToken(), AFLMediaToken.self))
-            let liveVideos = try await(self.aflProvider.request(.liveVideo(mediaToken.token), [AFLLiveVideo].self))
-            return liveVideos
-        }.then { liveVideos in
-            self.liveVideosViewController.liveVideos = liveVideos
-        }.catch { error in
-            print(error)
+        liveVideosViewController.setLoading(true)
+        getLiveVideos().then { videos in
+            self.liveVideosViewController.liveVideos = videos
+        }.always(in: .main) {
+            self.liveVideosViewController.setLoading(false)
         }
     }
     
@@ -115,15 +112,34 @@ class LiveCoordinator : RootViewCoordinator {
                                           okCompletion: {})
         })
     }
+    
+    // MARK: - Data
+    
+    internal func getLiveVideos() -> Promise<[AFLLiveVideo]> {
+        return async { _ -> ([AFLLiveVideo]) in
+            let mediaToken = try await(self.aflProvider.request(.mediaToken(), AFLMediaToken.self))
+            let liveVideos = try await(self.aflProvider.request(.liveVideo(mediaToken.token), [AFLLiveVideo].self))
+            return liveVideos
+        }
+    }
 }
 
 //MARK: - LiveVideosTableViewControllerDelegate
 
 extension LiveCoordinator: LiveVideosTableViewControllerDelegate {
-    func LiveVideosTableViewController(
+    func liveVideosTableViewController(
         _ liveVideosTableViewController: LiveVideosTableViewController,
         didSelectLiveVideo liveVideo: AFLLiveVideo) {
         showLiveVideo(liveVideo)
+    }
+    
+    func reloadLiveVideosTableViewController(_ liveVideosTableViewController: LiveVideosTableViewController) {
+        liveVideosTableViewController.setLoading(true)
+        getLiveVideos().then { videos in
+            liveVideosTableViewController.liveVideos = videos
+        }.always(in: .main) {
+            liveVideosTableViewController.setLoading(false)
+        }
     }
 }
 

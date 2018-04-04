@@ -12,7 +12,13 @@ class LiveVideosTableViewController: UITableViewController {
     
     var loading: Bool = false
     weak var delegate: LiveVideosTableViewControllerDelegate?
-    var liveVideos: [AFLLiveVideo] = []
+    var liveVideos: [AFLLiveVideo] = [] {
+        didSet {
+            if isViewLoaded {
+                tableView.reloadData()
+            }
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +26,10 @@ class LiveVideosTableViewController: UITableViewController {
         title = "Live Videos"
         
         addCastButton()
-
+        
+        self.refreshControl = UIRefreshControl()
+        self.refreshControl?.addTarget(self, action: #selector(reload(sender:)), for: UIControlEvents.valueChanged)
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -37,6 +46,17 @@ class LiveVideosTableViewController: UITableViewController {
     
     func setLoading(_ loading: Bool) {
         self.loading = loading
+        if loading {
+            self.refreshControl?.beginRefreshing()
+        } else {
+            self.refreshControl?.endRefreshing()
+        }
+    }
+    
+    // MARK: - IBOutlets
+    
+    @objc func reload(sender: UIRefreshControl) {
+        delegate?.reloadLiveVideosTableViewController(self)
     }
 
     // MARK: - Table view data source
@@ -57,7 +77,7 @@ class LiveVideosTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let liveVideo = liveVideos[indexPath.row]
-        delegate?.LiveVideosTableViewController(self, didSelectLiveVideo: liveVideo)
+        delegate?.liveVideosTableViewController(self, didSelectLiveVideo: liveVideo)
     }
 
     /*
@@ -108,7 +128,10 @@ class LiveVideosTableViewController: UITableViewController {
 }
 
 protocol LiveVideosTableViewControllerDelegate: class {
-    func LiveVideosTableViewController(
+    func liveVideosTableViewController(
         _ liveVideosTableViewController: LiveVideosTableViewController,
         didSelectLiveVideo liveVideo: AFLLiveVideo)
+    
+    func reloadLiveVideosTableViewController(
+        _ liveVideosTableViewController: LiveVideosTableViewController)
 }
