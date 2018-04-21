@@ -49,6 +49,6 @@ class ReplayRoundsTableViewController: UITableViewController {
 }
 
 protocol ReplayRoundsTableViewControllerDelegate: class {
-    func replayRoundsTableViewController(_ eeplayRoundsTableViewController: ReplayRoundsTableViewController,
+    func replayRoundsTableViewController(_ replayRoundsTableViewController: ReplayRoundsTableViewController,
                                          didSelectRound round: AFLRound)
 }

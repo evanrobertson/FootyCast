@@ -12,6 +12,8 @@ class ReplayRoundVideosViewController: UITableViewController {
     
     weak var delegate: ReplayRoundVideosViewControllerDelegate?
     
+    var round: AFLRound?
+    
     var roundVideos: [AFLRoundVideo] = [] {
         didSet {
             if isViewLoaded { tableView.reloadData() }
@@ -22,6 +24,30 @@ class ReplayRoundVideosViewController: UITableViewController {
         super.viewDidLoad()
         
         addCastButton()
+        
+        refreshControl = UIRefreshControl()
+        refreshControl?.addTarget(self, action: #selector(refresh(sender:)), for: .valueChanged)
+    }
+    
+    @objc func refresh(sender: UIRefreshControl) {
+        guard let round = self.round else {
+            setLoading(false)
+            return
+        }
+        
+        self.delegate?.replayRoundVideosViewController(self, refreshRound: round)
+    }
+    
+    func setLoading(_ loading: Bool) {
+        guard let refreshControl = self.refreshControl else {
+            return
+        }
+        
+        if loading && !refreshControl.isRefreshing {
+            refreshControl.beginRefreshing()
+        } else if !loading && refreshControl.isRefreshing {
+            refreshControl.endRefreshing()
+        }
     }
     
     // MARK: - UITableViewDataSource
@@ -47,7 +73,12 @@ class ReplayRoundVideosViewController: UITableViewController {
     }
 }
 
+// MARK: - ReplayRoundVideosViewControllerDelegate
+
 protocol ReplayRoundVideosViewControllerDelegate: class {
     func replayRoundVideosViewController(_ replayRoundVideosViewController: ReplayRoundVideosViewController,
                                          didSelectVideo video: AFLRoundVideo)
+    
+    func replayRoundVideosViewController(_ replayRoundVideosViewController: ReplayRoundVideosViewController,
+                                         refreshRound round: AFLRound)
 }

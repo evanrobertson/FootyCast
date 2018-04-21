@@ -28,9 +28,16 @@ class ReplayTypesTableViewController: UITableViewController {
     var currentSeasonId: String?
     
     var allSeasons: [SeasonType: [AFLSeason]] = [.preseason: [],
-                                                 .premiership: []]
+                                                 .premiership: []] {
+        didSet {
+            if isViewLoaded {
+                tableView.reloadData()
+            }
+        }
+    }
     
-    func setSeasons(seasons: [AFLSeason], forType type: SeasonType) {
+    func setSeasons(seasons: [AFLSeason]?, forType type: SeasonType) {
+        let seasons = seasons ?? []
         allSeasons[type] = seasons
         
         if isViewLoaded {
@@ -44,13 +51,32 @@ class ReplayTypesTableViewController: UITableViewController {
         addCastButton()
         
         title = "Replays"
+        
+        refreshControl = UIRefreshControl()
+        refreshControl?.addTarget(self, action: #selector(refresh(sender:)), for: .valueChanged)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @objc func refresh(sender: UIRefreshControl) {
+        self.delegate?.replayTypesTableViewControllerRefreshData(self)
+    }
 
+    func setLoading(_ loading: Bool) {
+        guard let refreshControl = self.refreshControl else {
+            return
+        }
+        
+        if loading && !refreshControl.isRefreshing {
+            refreshControl.beginRefreshing()
+        } else if !loading && refreshControl.isRefreshing {
+            refreshControl.endRefreshing()
+        }
+    }
+    
     // MARK: - UITableViewDataSource
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -89,4 +115,6 @@ class ReplayTypesTableViewController: UITableViewController {
 protocol ReplayTypesTableViewControllerDelegate: class {
     func replayTypesTableViewController(_ replayTypesTableViewController: ReplayTypesTableViewController,
                                         didSelectSeason season: AFLSeason)
+    
+    func replayTypesTableViewControllerRefreshData(_ replayTypesTableViewController: ReplayTypesTableViewController)
 }
