@@ -60,9 +60,15 @@ class VideoPlayerCoordinator: Coordinator {
     }
     
     func showVideo(_ video: AFLVideo, onViewController viewController: UIViewController, finishedLoading: @escaping () -> ()) throws {
+        var videoId: String
         
-        // TODO: Handle other possible codes
-        guard let videoId = video["ooyala embed code"] else {
+        if let ooyalaId = video["ooyala embed code"] {
+            videoId = ooyalaId
+        } else if let stateId = video["state-VIC"] {
+            videoId = stateId
+        } else if let hevcId = video["hevcEmbedCode-state-VIC"] {
+            videoId = hevcId
+        } else {
             throw VideoPlayerCoordinatorError.noVideoId
         }
         
