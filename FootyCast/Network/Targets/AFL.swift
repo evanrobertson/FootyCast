@@ -51,7 +51,7 @@ extension AFL: TargetType {
             return URL(string: "http://api.sub.afl.com.au/cfs-premium/users")!
             
         default:
-            return URL(string: "http://api.afl.com.au/cfs")!
+            return URL(string: "https://api.afl.com.au/cfs")!
         }
     }
     
