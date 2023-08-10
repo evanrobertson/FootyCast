@@ -1,3 +1,5 @@
+# This repository is archived as of 2023. The streams and accounts this project were using are no longer available, and when still available had introduced DRM.
+
 ## What is FootyCast
 
 FootyCast allows you to use your streaming account (Paid or Free) to watch matches either on device or on external devices using AirPlay or Google Cast.
